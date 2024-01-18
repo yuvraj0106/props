@@ -2,39 +2,25 @@
 
 /* General styles for larger screens */
 .navbar {
-  background-color: #3498db; /* Navbar background color */
+  background-color: #343a40; /* Navbar background color */
+  padding: 10px 0; /* Add some padding for better spacing */
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: #fff; /* Navbar brand text color */
+  color: #ff1493; /* Navbar brand text color */
   transition: color 0.5s ease-in-out;
+}
+
+.navbar-brand span {
+  color: #ffffff; /* Color for the 'uvraj' span */
 }
 
 .navbar-brand:hover {
   color: #e74c3c; /* Hover color for navbar brand */
 }
 
-.navbar-nav .nav-link {
-  color: #fff; /* Navbar links text color */
-  transition: color 0.5s ease-in-out;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #e74c3c; /* Hover color for navbar links */
-}
-
-/* Add animation to navbar items */
-.navbar-nav .nav-item {
-  transition: transform 0.3s ease-in-out;
-}
-
-.navbar-nav .nav-item:hover {
-  transform: translateY(-3px);
-}
-
-/* Add animation to navbar collapse button */
 .navbar-toggler-icon {
   background-color: #fff; /* Navbar toggle button color */
 }
@@ -43,40 +29,39 @@
   background-color: #e74c3c; /* Hover color for navbar toggle button */
 }
 
+.navbar-nav .nav-link {
+  color: #ffffff; /* Navbar links text color */
+  padding: 0.5rem 1rem; /* Adjust padding for navbar links */
+  transition: color 0.5s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e74c3c; /* Hover color for navbar links */
+}
+
 /* Responsive styles */
 @media (max-width: 767px) {
   .navbar-nav {
-    background-color: #3498db; /* Background color for mobile dropdown */
+    background-color: #343a40; /* Background color for mobile dropdown */
+    padding: 10px 0; /* Add some padding for better spacing */
   }
 
   .navbar-nav .nav-item {
-    border-bottom: 1px solid #fff; /* Border between mobile dropdown items */
+    border-bottom: 1px solid #ffffff; /* Border between mobile dropdown items */
   }
 
-  /* Stylish color for the span text in brand on smaller screens */
   .navbar-brand span {
-    color: #ff1493;
-    transition: color 0.5s ease-in-out;
+    color: #ff1493; /* Color for the 'uvraj' span on smaller screens */
   }
 
-  /* Change the color on hover for span text in brand on smaller screens */
   .navbar-brand:hover span {
-    color: #ff66b2;
+    color: #ff66b2; /* Hover color for the 'uvraj' span on smaller screens */
   }
 }
-
 /* Additional styles for smaller screens */
 @media (max-width: 768px) {
   .navbar-brand {
-    font-size: 1.5rem; /* Adjust the font size for smaller screens */
-  }
-
-  .navbar-nav {
-    margin-top: 10px; /* Adjust the top margin for the navbar items */
-  }
-
-  .nav-link {
-    padding: 10px; /* Adjust the padding for the navbar items */
+    font-size: 1.8rem; /* Adjust the font size for smaller screens */
   }
 }
 /* NavBar.css */
