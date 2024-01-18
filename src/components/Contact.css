@@ -1,0 +1,128 @@
+/* Contact.css */
+
+.contacts-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.contacts-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacts-content {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contacts-social, .contacts-form {
+  flex: 1;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.contacts-form h3,
+.contacts-info h3 {
+  color: #3498db;
+  text-align: center;
+}
+
+.contacts-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-form label {
+  margin-bottom: 5px;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contacts-form button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contacts-form button:hover {
+  background-color: #2980b9;
+}
+
+.contacts-info p {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contacts-social {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contacts-social h3 {
+  color: #3498db;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icon {
+  font-size: 30px;
+  margin-right: 15px;
+  color: #3498db;
+}
+
+.social-icon:hover {
+  color: #e74c3c;
+  animation: rainbow 2s infinite;
+}
+
+/* Define the rainbow animation */
+@keyframes rainbow {
+  0% {
+    color: #e74c3c;
+  }
+  25% {
+    color: #f39c12;
+  }
+  50% {
+    color: #3498db;
+  }
+  75% {
+    color: #2ecc71;
+  }
+  100% {
+    color: #e74c3c;
+  }
+}
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .contacts-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-social, .contacts-form {
+    width: 100%;
+  }
+}

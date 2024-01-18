@@ -1,0 +1,87 @@
+/* Project.css */
+
+.projects-container {
+  max-width: 800px; /* Adjust the max-width if needed */
+  margin: 0 auto;
+}
+
+.project {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3498db; /* Header text color */
+}
+
+.project-content {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #2ecc71; /* Content text color */
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.bordered {
+  border: 2px solid #e74c3c; /* Border color */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: #e74c3c; /* Circle color */
+  animation: pulse 1s infinite alternate; /* Add a pulsating animation */
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.view-more {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.view-more-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.view-more-link:hover {
+  background-color: red; /* Button background color on hover */
+}
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .project {
+    width: 100%; /* Make each project card take up full width on smaller screens */
+  }
+}

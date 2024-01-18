@@ -1,0 +1,12 @@
+.education-container {
+    background-image: url('../assets/tuljaram-chaturchand-college-baramati-ho-baramati-colleges-4gfu29x.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  /* @media (max-width: 768px) {
+
+  }     */

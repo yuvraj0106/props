@@ -1,0 +1,50 @@
+.logo-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a1a1a; /* Dark background color */
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  font-family: 'Montserrat'; /* You can change the font */
+  font-size: 3em;
+  color: #fff; /* White text color */
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+.logo .highlight {
+  color: #3498db; /* Highlight color */
+}
+
+.smoke {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgb(251, 7, 7), transparent 80%);
+  animation: smokeAnimation 3s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes smokeAnimation {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0.2;
+  }
+}
